@@ -17,9 +17,9 @@ def find_sharik(frame, color_lower, color_upper):
 cam = cv2.VideoCapture(0)
 cv2.namedWindow("Camera", cv2.WINDOW_KEEPRATIO)
 
-Colors = {"red"    : [np.array([0, 100, 100]),np.array([29, 255, 255])], 
-          "yellow" : [np.array([30, 100, 100]), np.array([90, 255, 255])],
-          "blue"   : [np.array([91, 100, 100]), np.array([255, 255, 255])]}
+Colors = {"red"    : [np.array([0, 100, 100]),np.array([15, 255, 255])], 
+          "yellow" : [np.array([21, 100, 100]), np.array([90, 255, 255])],
+          "blue"   : [np.array([91  , 100, 100]), np.array([255, 255, 255])]}
 
 while cam.isOpened():
     ret, frame = cam.read()
